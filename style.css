@@ -88,7 +88,7 @@
 
   .mainblock {
 
-    background-image: url(/img/bg.jpg);
+    background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -187,7 +187,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(/img/cart.svg);
+  background-image: url(img/cart.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,7 +201,7 @@
     position: absolute;
     height: 20px;
     width: 20px;
-    background-image: url(/img/phone.png);
+    background-image: url(img/phone.png);
     top: 0;
     left: 0;
     background-size: cover;
@@ -297,7 +297,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url(/img/bg.jpg);
+    background: url(img/bg.jpg);
     z-index: 9;
     transition-duration: 0.5s;
 
@@ -399,7 +399,7 @@
 
   content: "";
   position: absolute;
-  background: url(/img/logo.png);
+  background: url(img/logo.png);
   top: 20px;
   left: 15px;
   width: 0px;
@@ -957,7 +957,7 @@ text-align: center;
 
 .advertage {
  
-  background-image: url(/img/black-bg.jpg);
+  background-image: url(img/black-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1018,37 +1018,27 @@ text-align: center;
 
 
 
-
-.dishes {
-
-}
-
 .dishes__content {
 
   padding: 100px 0 150px 0;
-}
-.dishes__title {
-
-  padding-bottom: 120px;
 }
 
 
 .dishes__block {
 
   display: flex;
+  padding-top: 90px;
+  justify-content: center;
 }
 .dishes__block-big-img {
 
-  display: flex;
   margin-right: 30px;
   width: 450px;
-  max-width: 450px;
   height:470px;
 
-  background-image: url(/img/pizza.jpg);
+  background-image: url(img/pizza.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
    
@@ -1071,46 +1061,19 @@ text-align: center;
   font-family: 'Tinos';
   font-size: 26px;
   display: flex;
-  justify-content: space-around;
   width: 100%;
+  align-items: center;
+  text-align: center;
 }
 
-.dishes__block-row-price span{
+.dots{
 
   position: relative;
-  padding-right: 105px;
+  top: -5px;
+  padding: 0 20px 0 20px;
 }
 
-.dishes__block-row-price span:after{
 
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 80px;
-  border: 1px black dashed;
-  top: 55%;
-  left: 67%;
-}
-
-@media (max-width:1160px){
-
-
-  .dishes__block-big-img {
-
-    margin-right: 20px;
-    max-width: 320px;
-  }
-
-  .dishes__content {
-
-    padding: 90px 0 150px 0;
-  }
-  .dishes__title {
-  
-    padding-bottom: 90px;
-  }
-
-}
 
 @media (max-width:860px){
 
@@ -1120,14 +1083,9 @@ text-align: center;
     display: none;
   }
 
-  .dishes__block {
+  .container_none{
 
-    justify-content: center;
-  }
-
-  .dishes__block-row {
-
-    padding-bottom: 30px;
+    margin: 0;
   }
 
   .dishes__block-row-item{
@@ -1141,34 +1099,18 @@ text-align: center;
     width: 100%;
   }
 
-  .dishes__block-row-price {
+  .dishes__block-row {
 
-    font-size: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
   }
-
-  .dishes__block-row-price span:after{
-
-    left: 75%;
-  }
-  .dishes__block-row-price {
-
-    padding-left: 10px;
-  }
-
-
 }
 
 
 @media (max-width:550px){
 
-
   .dishes__block-big-img{
-
       display: block;
-      padding-right: 0;
-      max-width: 100%;
-      margin: 0;
-      max-width: 100%;
       width: 100%;
       margin-bottom: 50px;
   }
@@ -1181,53 +1123,23 @@ text-align: center;
 
     height: 120px;
     width: 250px;
-    padding-left: 10px;
   }
 
-  .dishes__block-row-price span:after{
-
-    border: 0px;
-    width: 0;
-    height: 0;
-  }
   .dishes__block-row-price {
 
     flex-direction: column;
-    text-align: center;
-    padding: 0;
-    margin-left: -50px;
   }
-  .dishes__block-row-price span{
 
-    padding: 0;
-    padding-bottom: 10px;
-  }
 }
 
-@media (max-width:460px){
 
-
-  .dishes__block-row-price span{
-
-    font-size: 23px;
-  }
-  .dishes__block-row-price {
-
-    margin-left: 0px;
-    font-size: 26px; 
-  }
-  .dishes__block-row-item{
-
-    width: 230px;
-  }
-}
 
 
 
 .menu {
 
   width: 100%;
-  background-image: url(/img/menu-bg.jpg);
+  background-image: url(img/menu-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1268,7 +1180,7 @@ text-align: center;
   position: absolute;
   right: 50px;
   bottom: 0px;
-  background-image: url(/img/price.png);
+  background-image: url(img/price.png);
   width: 100px;
   height: 100px;
 
@@ -1984,7 +1896,7 @@ text-align: center;
 
 .footer-img {
 
-  background-image: url(/img/footer.jpg);
+  background-image: url(img/footer.jpg);
   background-size: cover;
   width: 100%;
   height: 400px;
