@@ -13,20 +13,17 @@
 
     <div class="wrapper">
 
-        <input type="checkbox" id="select" class="check">
-        <label for="select" class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
         <div class="mainblock">
-            <div class="container">
 
-                <header>
-                    <div class="header__position">
+                <header class="header">
+                    <div class="container">
+                    <div class="header__body">
                         <div class="header__logo">
                             <img src="img/logo.png" alt="" />
+                        </div>
+
+                        <div class="header__burger">
+                            <span></span>
                         </div>
 
                         <nav class="header__nav">
@@ -47,18 +44,20 @@
                             </div>
                         </nav>
                     </div>
+                </div>
                 </header>
-
+                <div class="container">
                 <div class="mainblock__block">
+                    
                     <div class="mainblock__block-text-title">
                         Добро пожаловать<span class="mainblock__block-text-title_big">В наш ресторан</span>
                     </div>
-                    <div class="mainblock__block-text-subtitle">ДОМ ЛУЧШЕЙ ЕДЫ</div>
+                    <div class="mainblock__block-text-subtitle"><span class="mainblock__subtitle-left-decoration"></span>ДОМ ЛУЧШЕЙ ЕДЫ<span class="mainblock__subtitle-right-decoration"></span></div>
                     <div class="mainblock__block-btn btn">
                         <a href=""><span>МЕНЮ</span></a>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
 
         <main>
@@ -344,9 +343,9 @@
         </main>
 
         <div class="footer-img"></div>
-
-
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
