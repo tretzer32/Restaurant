@@ -126,6 +126,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: 50;
+  transition-duration: 0.3s;
 }
 
 .header::before{
@@ -259,7 +260,7 @@ h6 {
   display: flex;
   flex-direction: column;
   padding-top: 240px;
-  max-width: 550px;
+  max-width: 650px;
   text-align: center;
 }
 
@@ -312,6 +313,10 @@ h6 {
 .mainblock__block-btn span {
 
   padding: 15px 28px;
+}
+
+.header.behind{
+  top: -100%;
 }
 
 
