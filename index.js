@@ -49,6 +49,25 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
     }
 
+    const bodyWidth = body.clientWidth;
+    if (bodyWidth >= 998) {
+        
+    window.addEventListener('scroll', handleScroll);
+   
+    let lastScrollPos = window.scrollY;
+
+    function handleScroll() {
+
+        const currentScrollPos = window.scrollY;
+        if (currentScrollPos > lastScrollPos && currentScrollPos > 30) {
+            header.classList.add('behind');
+        } else {
+            header.classList.remove('behind');
+        }
+
+        lastScrollPos = currentScrollPos;
+    }
+    }
 
 
 });
