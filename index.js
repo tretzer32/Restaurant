@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('lock');
     });
 
-
-
-
+    
     if (header__links.length > 0) {
 
         header__links.forEach(menu__link => {
