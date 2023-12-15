@@ -51,6 +51,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -96,11 +97,7 @@ h6 {
 }
 
 
-.wrapper {
 
-  height: 100%;
-  width: 100%;
-}
 
 .mainblock {
 
@@ -108,7 +105,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
   min-width: 100%;
 }
 
@@ -538,9 +535,7 @@ h6 {
 
 .dishes__block-big-img {
 
-  width: 450px;
-  height: 470px;
-
+  width: 40vw;
   background-image: url(img/pizza.jpg);
   background-position: center;
   background-size: cover;
@@ -551,8 +546,8 @@ h6 {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 15px 0 15px;
+  margin: 0 15px;
+  gap: 15px;
 }
 
 .dishes__block-row {
@@ -567,7 +562,6 @@ h6 {
   font-family: 'Tinos';
   font-size: 26px;
   display: flex;
-  width: 100%;
   align-items: center;
   text-align: center;
 }
@@ -1280,24 +1274,7 @@ h6 {
   }
 
     .dishes__block-big-img {
-      display: block;
-      width: 100%;
-      margin-bottom: 50px;
-    }
-  
-    .dishes__block {
-  
-      flex-direction: column;
-    }
-  
-    .dishes__block-row-item {
-  
-      height: 120px;
-      width: 250px;
-    }
-
-    .dishes__block-rows{
-      gap: 30px;
+      display: none;
     }
   
     .dishes__block-row-price {
