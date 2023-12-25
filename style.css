@@ -519,8 +519,6 @@ h6 {
 
 
 
-
-
 .dishes__content {
 
   padding: 0 0 150px 0;
@@ -582,7 +580,7 @@ h6 {
   background-size: cover;
   padding: 0px 0 200px 0;
 
-  
+
 }
 
 .menu__content {
@@ -770,7 +768,6 @@ h6 {
 
 .comments {
 
- /* background: linear-gradient(to bottom, #ffcc66 0%, #ffffff 100%); */
   background: linear-gradient(to bottom, #ccffff 0%, #ffffff 100%);
 }
 
@@ -784,7 +781,7 @@ h6 {
   max-width: 1100px;
 }
 
-.comments__btn{
+.comments__btn {
 
   position: absolute;
   top: 0;
@@ -808,16 +805,14 @@ h6 {
   flex-direction: column;
   position: absolute;
   top: 0px;
- /* transform:rotate(0deg);
-  transition: transform 1s; */
-  transition: top 2s; 
+  transition: top 2s;
 
- }
+}
 
-.hidden{
+.hidden {
 
   top: -150%;
-  transition: top 1s; 
+  transition: top 1s;
 
 }
 
@@ -1351,7 +1346,6 @@ h6 {
 }
 
 
-
 @media (max-width: 550px) {
 
   .history__cards {
@@ -1387,9 +1381,6 @@ h6 {
   }
 
 }
-
-
-
 
 @media (max-width:470px) {
 

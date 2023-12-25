@@ -157,35 +157,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function commentsNone() {
-      comments__column.forEach(el => { 
+        comments__column.forEach(el => {
 
-        el.classList.add('hidden');
-    });
+            el.classList.add('hidden');
+        });
     }
-        
+
     function newComment(i) {
-      commentsNone();
-      comments__column[i].classList.remove('hidden');
+        commentsNone();
+        comments__column[i].classList.remove('hidden');
     }
-    
+
     let i = 0;
-    
-    let timerId = setTimeout (function tick () {
+
+    let timerId = setTimeout(function tick() {
 
         newComment(i);
-        i = (i+1) % comments__column.length;
-        timerId = setTimeout (tick, 5000);
+        i = (i + 1) % comments__column.length;
+        timerId = setTimeout(tick, 5000);
     }, 0);
 
-    
+
     comments__btn.addEventListener('click', (handleClick));
 
-    function handleClick(){
+    function handleClick() {
 
         const currentTime = new Date().getTime();
-        if(currentTime - lastClickTime >= minInterval){
+        if (currentTime - lastClickTime >= minInterval) {
 
-            i = (i+1) % comments__column.length;
+            i = (i + 1) % comments__column.length;
             newComment(i);
             lastClickTime = currentTime;
         }
