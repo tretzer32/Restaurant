@@ -139,4 +139,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
     checkBtns();
 
+
+
+
+    const comments__column = document.querySelectorAll('.comments__column');
+    const comments__text = document.querySelectorAll('.comments__text');
+    const comments__btn = document.querySelector('.comments__btn');
+
+    let lastClickTime = 0;
+    const minInterval = 1000;
+
+    comments__text.forEach((el) => {
+        let comments__text__height = el.clientHeight;
+        if (comments__text__height >= 120) {
+            el.style.overflowY = 'scroll';
+        }
+    });
+
+    function commentsNone() {
+      comments__column.forEach(el => { 
+
+        el.classList.add('hidden');
+    });
+    }
+        
+    function newComment(i) {
+      commentsNone();
+      comments__column[i].classList.remove('hidden');
+    }
+    
+    let i = 0;
+    
+    let timerId = setTimeout (function tick () {
+
+        newComment(i);
+        i = (i+1) % comments__column.length;
+        timerId = setTimeout (tick, 5000);
+    }, 0);
+
+    
+    comments__btn.addEventListener('click', (handleClick));
+
+    function handleClick(){
+
+        const currentTime = new Date().getTime();
+        if(currentTime - lastClickTime >= minInterval){
+
+            i = (i+1) % comments__column.length;
+            newComment(i);
+            lastClickTime = currentTime;
+        }
+    }
+
+
 });
+
+
+

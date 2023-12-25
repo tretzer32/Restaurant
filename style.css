@@ -580,7 +580,9 @@ h6 {
   background-image: url(img/menu-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 95px 0 200px 0;
+  padding: 0px 0 200px 0;
+
+  
 }
 
 .menu__content {
@@ -593,6 +595,7 @@ h6 {
   padding-bottom: 100px;
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   font-size: 70px;
+  padding-top: 95px;
 }
 
 .menu__columns {
@@ -721,7 +724,7 @@ h6 {
 
 .btn-prev {
 
-  left: 0px;
+  left: -4px;
   background-image: url('img/left__btn.png');
 }
 
@@ -767,13 +770,32 @@ h6 {
 
 .comments {
 
-  background: #E6E5E5;
+ /* background: linear-gradient(to bottom, #ffcc66 0%, #ffffff 100%); */
+  background: linear-gradient(to bottom, #ccffff 0%, #ffffff 100%);
 }
+
 
 .comments__content {
 
-  padding: 100px 0 50px 0;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 450px;
+  max-width: 1100px;
 }
+
+.comments__btn{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+}
+
 
 .comments__column {
 
@@ -781,30 +803,44 @@ h6 {
   font-family: 'Open Sans';
   font-size: 20px;
   line-height: 27px;
-
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 0px;
+ /* transform:rotate(0deg);
+  transition: transform 1s; */
+  transition: top 2s; 
+
+ }
+
+.hidden{
+
+  top: -150%;
+  transition: top 1s; 
+
 }
 
 .comments__text {
 
   font-style: italic;
-  max-width: 920px;
+  margin: 0 5px;
+  max-height: 120px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+  z-index: 3;
 }
 
 .comments__icon {
 
   padding: 20px 0;
-  height: 130px;
-  width: 90px;
 }
 
 .comments__icon img {
 
+  border: 1px solid plum;
+  box-shadow: 0px 0px 5px 1px #656363;
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  padding: 10px;
 }
 
 .comments__name span {
@@ -814,7 +850,9 @@ h6 {
   padding-bottom: 10px;
 }
 
-
+.container__padding_none2 {
+  padding: 0;
+}
 
 
 
@@ -1209,7 +1247,7 @@ h6 {
 
 @media (max-width:998px) {
 
-  .container_none {
+  .container__padding_none {
     padding: 0;
   }
 
